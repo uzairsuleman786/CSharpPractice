@@ -77,6 +77,18 @@ namespace CSharpPractice
             }
             
         }
+
+        public void Factorial()
+        {
+            int result = 1;
+            Console.Write("Enter Number for Factorial: ");
+            int inputNumber = Convert.ToInt32(Console.ReadLine());
+            for(var i=1; i<=inputNumber; i++)
+            {
+                result *= i;
+            }
+            Console.WriteLine("Factorial of " + inputNumber + " is: " + result);
+        }
     }
     public class Program
     {
@@ -87,6 +99,7 @@ namespace CSharpPractice
             Console.WriteLine("2- Prime Checker");
             Console.WriteLine("3- Palindrome Checker for Numbers");
             Console.WriteLine("4- Take Input in Array");
+            Console.WriteLine("5- Factorial");
             Console.WriteLine("9- Close Program");
            
             Console.Write("Enter your Number: ");
@@ -109,6 +122,10 @@ namespace CSharpPractice
             else if (userInput == 4)
             {
                 program.TakeInputInArray();
+            }
+            else if (userInput == 5)
+            {
+                program.Factorial();
             }
             else if(userInput == 9)
             {
