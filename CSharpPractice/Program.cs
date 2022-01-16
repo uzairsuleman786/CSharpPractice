@@ -100,7 +100,7 @@ namespace CSharpPractice
             Console.WriteLine("3- Palindrome Checker for Numbers");
             Console.WriteLine("4- Take Input in Array");
             Console.WriteLine("5- Factorial");
-            Console.WriteLine("9- Close Program");
+            Console.WriteLine("0- Close Program");
            
             Console.Write("Enter your Number: ");
             int userInput = Convert.ToInt32(Console.ReadLine());
@@ -127,7 +127,7 @@ namespace CSharpPractice
             {
                 program.Factorial();
             }
-            else if(userInput == 9)
+            else if(userInput == 0)
             {
                 Environment.Exit(0);
             }
